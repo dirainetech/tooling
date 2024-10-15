@@ -14,16 +14,16 @@ variable "instance_type" {
 variable "key_name" {
   description = "The key name for the instances"
   type        = string
-  default     = "DevOps_Train2024"
+  default     = "mykey"
 }
 
 ###########################
 #Sonaqube instance
 ##########################
-variable "security_group_id" {
-  type    = string
-  default = "sg-07b8b3043804ede33"
-}
+# variable "security_group_id" {
+#   type    = string
+#   default = "sg-07b8b3043804ede33"
+# }
 
 # variable "subnet_id" {
 #   type    = string
@@ -38,11 +38,11 @@ variable "security_group_id" {
 ##################
 #sonarqube db 
 ###################
-variable "subnet_id" {
-  description = "The subnet ID where the instance will be deployed"
-  type        = string
-  default     = "subnet-0ea3d234fba84eef9"
-}
+# variable "subnet_id" {
+#   description = "The subnet ID where the instance will be deployed"
+#   type        = string
+#   default     = "subnet-0ea3d234fba84eef9"
+# }
 
 # variable "db_name" {
 #   description = "The name of the PostgreSQL database"
@@ -75,20 +75,20 @@ variable "subnet_id" {
 #   default     = "default-vpc-08dcf780b5e752f2c"
 # }
 
-variable "s3_bucket" {
-  description = "The name of the S3 bucket for storing Terraform state"
-  type        = string
-  default     = "terraform-state-bucket-fusi"
-}
+# variable "s3_bucket" {
+#   description = "The name of the S3 bucket for storing Terraform state"
+#   type        = string
+#   default     = "terraform-state-bucket-fusi"
+# }
 
-variable "dynamodb_table" {
-  description = "The name of the DynamoDB table for state locking"
-  type        = string
-  default     = "terraform-lock-table"
-}
+# variable "dynamodb_table" {
+#   description = "The name of the DynamoDB table for state locking"
+#   type        = string
+#   default     = "terraform-lock-table"
+# }
 
-variable "main-region" {
-  description = "The AWS region to deploy resources"
-  type        = string
-  default     = "us-west-2"
-}
+# variable "main-region" {
+#   description = "The AWS region to deploy resources"
+#   type        = string
+#   default     = "us-west-2"
+# }
